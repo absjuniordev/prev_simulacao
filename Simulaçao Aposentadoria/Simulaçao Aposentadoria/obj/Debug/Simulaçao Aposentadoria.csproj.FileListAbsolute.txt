@@ -1,0 +1,8 @@
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\bin\Debug\Simulaçao Aposentadoria.exe.config
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\bin\Debug\Simulaçao Aposentadoria.exe
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\bin\Debug\Simulaçao Aposentadoria.pdb
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\obj\Debug\Simulaçao Aposentadoria.csproj.AssemblyReference.cache
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\obj\Debug\Simulaçao Aposentadoria.csproj.SuggestedBindingRedirects.cache
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\obj\Debug\Simulaçao Aposentadoria.csproj.CoreCompileInputs.cache
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\obj\Debug\Simulaçao Aposentadoria.exe
+C:\Users\absju\Documents\Projeto no GitHub\prev_simulacao\Simulaçao Aposentadoria\Simulaçao Aposentadoria\obj\Debug\Simulaçao Aposentadoria.pdb
