@@ -11,44 +11,52 @@ namespace Simulaçao_Aposentadoria
         static void Main(string[] args)
         {
 
-            int idade, contri;
-            string sexo, resp = ""; // usar aspas duplas para, mas em outro tipo de programação pode mudar
+            int idade, tempoContribuicao, anoNascimento;
+            string nomeUsuario, sexo, resp = ""; 
 
 
             do
             {
-                Console.WriteLine("|=====PREVIDENCIAL SOCIAL=======|");
-                Console.Write("Digite sua idade: ");
-                idade = int.Parse(Console.ReadLine());
-                Console.Write("Digite tempo de contribuição: ");
-                contri = int.Parse(Console.ReadLine());
-                Console.Write("Digite o sexo [m/f]: ");
+            
+                Console.WriteLine("|======== INSS Simulação de Aposentadoria Por idade ========|");
+                Console.Write("| Informe seu nome: ");
+                nomeUsuario = Console.ReadLine();
+                Console.Write("| Digite o ano de nacimento com quatro digitos: ");               
+                anoNascimento = int.Parse(Console.ReadLine());
+                Console.Write("| Digite tempo de contribuição: ");
+                tempoContribuicao = int.Parse(Console.ReadLine());
+                Console.Write("| Qual o seu sexo [m/f]: ");
                 sexo = Console.ReadLine();
+                Console.WriteLine("|===========================================================|");
+                idade = 2022 - anoNascimento;
 
-
-                if (idade >= 62 && contri >= 15 && sexo == "f")
+                if (idade >= 62 && tempoContribuicao >= 15 && sexo == "f")
                 {
-                    Console.WriteLine("A senhora podera dar entrada na Aponsetadoria por idade");
-                    Console.WriteLine("|==============================|");
+                    Console.WriteLine("|-----------------------------------------------------------------|");
+                    Console.WriteLine($"| {nomeUsuario} a sra podera dar entrada na Aponsetadoria por idade |");
+                    Console.WriteLine("|-----------------------------------------------------------------|");
                 }
-                else if (idade >= 65 && contri >= 20 && sexo == "m")
+                else if (idade >= 65 && tempoContribuicao >= 20 && sexo == "m")
                 {
-
-                    Console.WriteLine("O senhor podera dar entrada na Aponsetadoria por idade");
-                    Console.WriteLine("|----------------------------------------------------|");
+                    Console.WriteLine("|-----------------------------------------------------------------|");
+                    Console.WriteLine($"| {nomeUsuario} o sr podera dar entrada na Aponsetadoria por idade  |");
+                    Console.WriteLine("|-----------------------------------------------------------------|");
                 }
-                else if (idade <= 65 && contri < 15 && sexo == "f" || sexo == "m")
+                else if (idade <= 65 && tempoContribuicao < 15 && sexo == "f" || sexo == "m")
                 {
-                    Console.WriteLine("Sem direito para aposntadoria po idade.");
+                    Console.WriteLine("|--------------------------------------------------------------------|");
+                    Console.WriteLine("| Sem direito para aposntadoria por idade.                           |");
+                    Console.WriteLine("|--------------------------------------------------------------------|");
                 }
                 else
                 {
                     Console.WriteLine("|---------------------------|");
-                    Console.WriteLine("Reveja os dados digitados");
+                    Console.WriteLine("| Reveja os dados digitados");
                     Console.WriteLine("|---------------------------|");
                 }
-                Console.WriteLine("|==============================|");
-                Console.Write("Deseja continuar? [s/]n]");
+                
+                Console.Write("|\t\tDeseja continuar? [s/]n:");
+                
                 resp = Console.ReadLine();
                 Console.Clear();
             }
