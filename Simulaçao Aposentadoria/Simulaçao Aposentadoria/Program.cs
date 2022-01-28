@@ -17,8 +17,8 @@ namespace Simulaçao_Aposentadoria
 
             do
             {
-                Console.WriteLine("==== PREVIDENCIAL SOCIAL =======");
-                Console.Write("Digite a idade: ");
+                Console.WriteLine("|=====PREVIDENCIAL SOCIAL=======|");
+                Console.Write("Digite sua idade: ");
                 idade = int.Parse(Console.ReadLine());
                 Console.Write("Digite tempo de contribuição: ");
                 contri = int.Parse(Console.ReadLine());
@@ -29,10 +29,13 @@ namespace Simulaçao_Aposentadoria
                 if (idade >= 62 && contri >= 15 && sexo == "f")
                 {
                     Console.WriteLine("A senhora podera dar entrada na Aponsetadoria por idade");
+                    Console.WriteLine("|==============================|");
                 }
                 else if (idade >= 65 && contri >= 20 && sexo == "m")
                 {
+
                     Console.WriteLine("O senhor podera dar entrada na Aponsetadoria por idade");
+                    Console.WriteLine("|----------------------------------------------------|");
                 }
                 else if (idade <= 65 && contri < 15 && sexo == "f" || sexo == "m")
                 {
@@ -40,8 +43,11 @@ namespace Simulaçao_Aposentadoria
                 }
                 else
                 {
-                    Console.WriteLine("Reveja os dados digitados"); // fora do conte
+                    Console.WriteLine("|---------------------------|");
+                    Console.WriteLine("Reveja os dados digitados");
+                    Console.WriteLine("|---------------------------|");
                 }
+                Console.WriteLine("|==============================|");
                 Console.Write("Deseja continuar? [s/]n]");
                 resp = Console.ReadLine();
                 Console.Clear();
